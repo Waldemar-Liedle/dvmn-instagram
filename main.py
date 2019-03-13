@@ -70,7 +70,7 @@ def fetch_hubble_images(collection_name, images_dir):
 	
 def fetch_images(images_dir):
   collection_name = "spacecraft"  
-  #fetch_spacex_last_launch(images_dir)
+  fetch_spacex_last_launch(images_dir)
   fetch_hubble_images(collection_name, images_dir)
 
 def publish_image(bot, image):
