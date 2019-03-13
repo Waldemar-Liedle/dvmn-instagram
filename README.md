@@ -1,4 +1,4 @@
-<h1>dvmn-bitly</h1>
+<h1>dvmn-instagram</h1>
 <p>Command line tool for the work with Instagram API. The program was created as an assigment for the course "<a href="https://dvmn.org/modules/web-api/" target="_blank">APIs of web services</a>" from DevMan.</p>
 <h3>Installation</h3>
 <p>After Python3 and pip are installed, run following command:</p>
