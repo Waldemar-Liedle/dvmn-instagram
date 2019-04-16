@@ -36,7 +36,7 @@ PermissionError: [WinError 32] Der Prozess kann nicht auf die Datei zugreifen, d
 ```
 # dvmn-instagram
 
-Command line tool for the work with Instagram API. The program was created as an assigment for the course "[https://dvmn.org/modules/web-api/][APIs of web services]" from DevMan.
+Command line tool for the work with Instagram API. The program was created as an assigment for the course "[APIs of web services](https://dvmn.org/modules/web-api/)" from DevMan.
 
 ### Installation
 
