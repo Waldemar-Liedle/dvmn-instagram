@@ -6,7 +6,7 @@ Command line tool for the work with Instagram API. The program was created as an
 
 After Python3 and pip are installed, run following command:
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ### Purpose
 
