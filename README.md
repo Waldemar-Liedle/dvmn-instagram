@@ -1,8 +1,30 @@
-# Вопрос
+# dvmn-instagram
 
-При загрузке картинок на Instagram загружает первую картинку, а потом выдаёт ошибку доступа к картинкам, мол, другой процесс уже использует файл. Я не могу найти те места в коде, где я многократно обращаюсь к одному файлу. Я не знаю, как решить эту проблему.
+Command line tool for the work with Instagram API. The program was created as an assigment for the course "[APIs of web services](https://dvmn.org/modules/web-api/)" from DevMan.
 
-# Traceback
+### Installation
+
+After Python3 and pip are installed, run following command:
+
+pip install -r requirements.txt
+
+### Purpose
+
+The program can be used to download images from Hubble and SpaceX and publish them on Instagram.
+
+Valid commands are:
+
+```python main.py -c download```
+
+```python main.py -command download```
+
+```python main.py -c upload```
+
+```python main.py -command upload```
+
+### Important note
+
+In current state this program isn't working, because InstaBot library 0.26.0 has a bug (look at traceback):
 
 ```
 2019-04-16 22:20:32,496 - INFO - Instabot Started
@@ -35,26 +57,6 @@ PermissionError: [WinError 32] Der Prozess kann nicht auf die Datei zugreifen, d
 2019-04-16 22:20:43,765 - INFO - Total requests: 5
 ```
 
-# dvmn-instagram
+You could use an older version (for example 0.4.5) to get it work.
 
-Command line tool for the work with Instagram API. The program was created as an assigment for the course "[APIs of web services](https://dvmn.org/modules/web-api/)" from DevMan.
-
-### Installation
-
-After Python3 and pip are installed, run following command:
-
-pip install -r requirements.txt
-
-### Purpose
-
-The program can be used to download images from Hubble and SpaceX and publish them on Instagram.
-
-Valid commands are:
-
-```python main.py -c download```
-
-```python main.py -command download```
-
-```python main.py -c upload```
-
-```python main.py -command upload```
+```pip install --upgrade instabot==0.4.5```
