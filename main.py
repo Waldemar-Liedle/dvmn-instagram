@@ -11,6 +11,9 @@ HUBBLE_IMAGES_URL = "http://hubblesite.org/api/v3/images"
 COMMAND_DOWNLOAD_IMAGES = "download"
 COMMAND_UPLOAD_IMAGES = "upload"
 
+# There could occure some formats, that are not allowed on Instagram.
+ALLOWED_EXTENSIONS = [ 'jpg', 'png' ]
+
 def download_image(image_url, file_name):
   response = requests.get(image_url)
   response.raise_for_status()
@@ -72,7 +75,8 @@ def publish_image(bot, image):
 def publish_images(images_dir):
   bot = get_bot()
   for file_name in listdir(images_dir):
-    publish_image(bot, "{}/{}".format(images_dir, file_name))
+    if get_extension(file_name).lower() in ALLOWED_EXTENSIONS:
+      publish_image(bot, "{}/{}".format(images_dir, file_name))
 	
 def get_bot():
   bot = Bot() 
